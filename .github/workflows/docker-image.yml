@@ -30,4 +30,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/$PROJECT_NAME:$IMAGE_TAG
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mail_attach_reciver:latest
