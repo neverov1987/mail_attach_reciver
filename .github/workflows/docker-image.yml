@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ "master" ]
 env:
-  IMAGE_NAME: neverov1987/mail_attach_reciver
-  IMAGE_TAG: $(date +%s)
+  PROJECT_NAME: mail_attach_reciver
+  IMAGE_TAG: latest
   
 jobs:
   docker:
@@ -30,4 +30,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ IMAGE_NAME }}:${{ IMAGE_TAG }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ PROJECT_NAME }}:${{ IMAGE_TAG }}
