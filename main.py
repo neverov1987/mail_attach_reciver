@@ -33,6 +33,10 @@ def send_image(botToken, chat_id, imageFile):
     return
 
 
+if mail_check_interval is None:
+    mail_check_interval = 30
+
+
 while True:
     get_attachment(mail_server, mail_login, mail_password, mail_folder, attachments_dir)
-    time.sleep(mail_check_interval, 30)
+    time.sleep(mail_check_interval)
