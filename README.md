@@ -1,3 +1,4 @@
+[![Docker Image CI](https://github.com/neverov1987/mail_attach_reciver/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/neverov1987/mail_attach_reciver/actions/workflows/docker-image.yml)
 Run example:
 ```
 MY_IMAGE_NAME=neverov1987/mail_attach_reciver
