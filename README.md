@@ -10,5 +10,6 @@ docker run -ti \
     -e MAIL_LOGIN='<your_mail_login>>' \
     -e MAIL_PASSWORD='your_mail_password' \
     -e MAIL_FOLDER='<folder for search attachments>' \
+    -e MAIL_CHECK_INTERVAL='30' \ #Default 30 sec
 $MY_IMAGE_NAME
 ```
