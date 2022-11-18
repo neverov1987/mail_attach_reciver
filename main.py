@@ -35,6 +35,10 @@ def send_image(botToken, chat_id, imageFile):
 
 if mail_check_interval is None:
     mail_check_interval = 30
+    
+
+if mail_folder is None:
+    mail_folder = 'Inbox'
 
 
 while True:
